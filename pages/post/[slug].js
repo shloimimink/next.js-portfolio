@@ -33,7 +33,6 @@ export default function SinglePost({post}) {
                                     {post.title}
                                 </h1>
                                 <div className="flex justify-center text-gray-800">
-                                    {/* eslint-disable-next-line @next/next/no-img-element */}
                                     <img src={urlFor(post.authorImage).url()}
                                          alt={post.name}
                                          className="w-10 h-10 rounded-full"
