@@ -1,10 +1,10 @@
-import {sanityClient} from "../config/sanity";
-import Layout from "../components/Layout";
+import {sanityClient} from "../config/sanity"
+import Layout from "../components/Layout"
 import imageUrlBuilder from '@sanity/image-url'
 import BlockContent from '@sanity/block-content-to-react'
-import {aboutQuery} from "./api/index";
+import {aboutQuery} from "./api/index"
 
-const builder = imageUrlBuilder(sanityClient);
+const builder = imageUrlBuilder(sanityClient)
 
 function urlFor(source) {
     return builder.image(source)
@@ -39,8 +39,8 @@ export default function About({author}) {
             </div>
         </Layout>
 
-    );
-};
+    )
+}
 
 export async function getStaticProps() {
     const author = await sanityClient.fetch(aboutQuery())

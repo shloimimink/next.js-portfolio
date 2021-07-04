@@ -1,11 +1,11 @@
-import {sanityClient} from "../../config/sanity";
-import imageUrlBuilder from "@sanity/image-url";
+import {sanityClient} from "../../config/sanity"
+import imageUrlBuilder from "@sanity/image-url"
 import BlockContent from '@sanity/block-content-to-react'
-import Layout from "../../components/Layout";
-import {singlePostQuery} from "../api/index";
-import {useRouter} from "next/router";
+import Layout from "../../components/Layout"
+import {singlePostQuery} from "../api/index"
+import {useRouter} from "next/router"
 
-const builder = imageUrlBuilder(sanityClient);
+const builder = imageUrlBuilder(sanityClient)
 
 function urlFor(source) {
     return builder.image(source)
@@ -73,11 +73,11 @@ export async function getStaticPaths() {
     return {
         paths,
         fallback: true,
-    };
+    }
 }
 
 export async function getStaticProps({params}) {
     const {slug} = params;
-    const post = await sanityClient.fetch(singlePostQuery(), {slug});
+    const post = await sanityClient.fetch(singlePostQuery(), {slug})
     return {props: {post}};
 }
