@@ -1,4 +1,40 @@
 /* ./styles/globals.css */
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+.cursive {
+    font-family: "Amatic SC", cursive;
+    font-weight: 700;
+}
+
+.prose img {
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 5px;
+}
+
+.home-name {
+    font-size: 150px;
+}
+
+.homeImg {
+    background: center / cover no-repeat;
+    background-image: url("https://images.unsplash.com/photo-1482062364825-616fd23b8fc1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1050&q=80")
+}
+
+.aboutImg {
+    background: center / cover no-repeat;
+    background-image: url("https://images.unsplash.com/photo-1512138664757-360e0aad5132?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1351&q=80")
+}
+
+body {
+    font-family: "Rubik", sans-serif;
+}
+
+#menu-toggle:checked + #menu {
+    display: block;
+}
