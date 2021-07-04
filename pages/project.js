@@ -1,9 +1,9 @@
-import {sanityClient} from "../config/sanity";
-import Layout from "../components/Layout";
+import {sanityClient} from "../config/sanity"
+import Layout from "../components/Layout"
 import {faGithub} from '@fortawesome/free-brands-svg-icons'
 import {faEye} from '@fortawesome/free-solid-svg-icons'
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
-import {projectQuery} from "./api/index";
+import {projectQuery} from "./api/index"
 
 export default function ProjectPage({project}) {
     return (

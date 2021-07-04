@@ -1,5 +1,5 @@
-import Link from "next/link";
-import {SocialIcon} from "react-social-icons";
+import Link from "next/link"
+import {SocialIcon} from "react-social-icons"
 
 export default function Navbar() {
     return (

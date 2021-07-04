@@ -1,7 +1,7 @@
-import Layout from "../../components/Layout";
+import Layout from "../../components/Layout"
 import Link from "next/link";
-import {sanityClient, urlFor} from "../../config/sanity";
-import {posts} from "../api/index";
+import {sanityClient, urlFor} from "../../config/sanity"
+import {posts} from "../api/index"
 
 export default function PostsPage({post}) {
     return (
