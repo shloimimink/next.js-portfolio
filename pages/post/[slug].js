@@ -3,6 +3,7 @@ import imageUrlBuilder from "@sanity/image-url";
 import BlockContent from '@sanity/block-content-to-react'
 import Layout from "../../components/Layout";
 import {singlePostQuery} from "../api/index";
+import {useRouter} from "next/router";
 
 const builder = imageUrlBuilder(sanityClient);
 
@@ -11,6 +12,13 @@ function urlFor(source) {
 }
 
 export default function SinglePost({post}) {
+
+    const router = useRouter()
+
+    if (router.isFallback) {
+        return <div>Loading...</div>
+    }
+
 
     if (!post) return <div>Loading...</div>
 
