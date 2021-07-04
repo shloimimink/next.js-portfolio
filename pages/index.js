@@ -11,7 +11,7 @@ export default function MainPage() {
                 <section className="relative flex justify-center min-h-screen pt-12 lg:pt-64 px-8">
                     <h1 className="text-6xl text-gray-400 font-bold cursive leading-none lg:leading-snug home-name">Hi.
                         I'm
-                        Shloimi</h1>
+                        John Smith</h1>
                 </section>
             </main>
         </Layout>
