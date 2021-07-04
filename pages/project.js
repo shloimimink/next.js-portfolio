@@ -17,7 +17,9 @@ export default function ProjectPage({project}) {
                     <section className="grid grid-cols-2 gap-8">
                         {project &&
                         project.map((proj, index) => (
-                            <article className="relative rounded-lg shadow-xl bg-white p-16">
+                            <article className="relative rounded-lg shadow-xl bg-white p-16"
+                                     key={index}
+                            >
                                 <h3 className="text-gray-800 text-3xl font-bold mb-2 hover:text-pink-700">
                                     <a
                                         href={proj.link}

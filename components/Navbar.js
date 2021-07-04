@@ -16,7 +16,7 @@ export default function Navbar() {
                     <Link href="/post">
                         <a
                             className="inline-flex items-center py-3 px-3 my-6 rounded text-red hover:text-black"
-                            activeClassName="text-red-100 bg-blue-700"
+                            activeclassname="text-red-100 bg-blue-700"
                         >
                             Blog Posts
                         </a>

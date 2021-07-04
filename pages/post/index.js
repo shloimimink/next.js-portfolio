@@ -13,13 +13,11 @@ export default function PostsPage({post}) {
                         posts</h2>
                     <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
                         {post && post.map((post, index) => (
-                            // eslint-disable-next-line react/jsx-key
-                            <article>
+                            <article key={index}>
                                 <Link href={`/post/${post.slug.current}`}>
                                     <a>
                         <span
-                            className="block h-64 relative rounded shadow leading-snug bg-white border-l-8 border-gray-500"
-                            key={index}>
+                            className="block h-64 relative rounded shadow leading-snug bg-white border-l-8 border-gray-500">
                             {/* eslint-disable-next-line @next/next/no-img-element */}
                             <img
                                 src={urlFor(post.mainImage).url()}
